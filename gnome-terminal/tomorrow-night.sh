@@ -33,6 +33,8 @@ dlist_append() {
     "$DCONF" write "$key" "[$entries]"
 }
 
+#   <COLOUR_VALUES>
+
 base00="#1d1f21"
 base01="#282a2e"
 base02="#373b41"
@@ -65,6 +67,8 @@ blue=$base0d
 magenta=$base0e
 cyan=$base0c
 
+#   </COLOUR_VALUES>
+
 # Newest versions of gnome-terminal use dconf
 if which "$DCONF" > /dev/null 2>&1; then
     # Check that uuidgen is available
@@ -94,7 +98,7 @@ if which "$DCONF" > /dev/null 2>&1; then
 
         # Update profile values with theme options
         dset visible-name "'$PROFILE_NAME'"
-        dset palette "['$black', '$red', '$green', '$yellow', '$blue', '$cyan', '$magenta', '$gray', '$darkgray', '$red', '$green', '$yellow', '$blue', '$cyan', '$magenta', '$white']"
+        dset palette "['$black', '$red', '$green', '$yellow', '$blue', '$magenta', '$cyan', '$gray', '$darkgray', '$red', '$green', '$yellow', '$blue', '$magenta', '$cyan', '$white']"
         dset background-color "'$background'"
         dset foreground-color "'$foreground'"
         dset bold-color "'$foreground'"
