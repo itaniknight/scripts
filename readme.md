@@ -12,7 +12,7 @@ source:  https://github.com/aaron-williamson/base16-gnome-terminal
 
 updates this repository. to this github project. you're looking at it right now!
 
-##  pacman.show-optional-dependencies.sh
+##  pacman.show-optional-dependencies.py
 
 lists ALL optional dependencies for ALL packages installed on the system. useful since arch is a bit weird about not including important things sometimes.
 
